@@ -1,0 +1,15 @@
+{
+  "name": "ikbase-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@angular/cli": "^8.3.20",
+    "angular": "^1.7.9"
+  },
+  "author": "",
+  "license": "ISC"
+}
