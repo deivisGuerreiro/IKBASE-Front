@@ -13,18 +13,18 @@
     <div class="row">
       <div class="col-md-12">
         <div class="well login-box">
-          <form action="">
+          <form>
             <legend>Logar-se</legend>
             <div class="form-group">
               <label for="email-login">E-mail</label>
-              <input id="email-login" placeholder="Seu Email" type="text" class="form-control"/>
+              <input ng-model="user.email" id="email-login" placeholder="Seu Email" type="text" class="form-control"/>
             </div>
             <div class="form-group">
               <label for="senha-login">Senha</label>
-              <input id="senha-login" value='' placeholder="Sua Senha" type="password" class="form-control"/>
+              <input ng-model="user.senha" id="senha-login" value='' placeholder="Sua Senha" type="password" class="form-control"/>
             </div>
             <div class="form-group text-center">
-              <input type="submit" class="btn btn-success btn-login-submit" value="Logar"/>
+              <input ng-click="login(user)" type="submit" class="btn btn-success btn-login-submit" value="Logar"/>
             </div>
           </form>
         </div>
@@ -37,26 +37,26 @@
     <div class="row">
       <div class="col-md-12">
         <div class="well login-box">
-          <form action="">
+          <form >
             <legend>Registrar-se</legend>
             <div class="form-group">
               <label for="nome-registrado">Nome</label>
-              <input id="nome-registrado" placeholder="Seu Nome" type="text" class="form-control" />
+              <input ng-model="userNew.nome" id="nome-registrado" placeholder="Seu Nome" type="text" class="form-control" />
             </div>
             <div class="form-group">
               <label for="email-registrado">E-mail</label>
-              <input id="email-registrado" placeholder="Seu Email" type="text" class="form-control" />
+              <input ng-model="userNew.email" id="email-registrado" placeholder="Seu Email" type="text" class="form-control" />
             </div>
             <div class="form-group">
               <label for="senha-registrada">Senha</label>
-              <input id="senha-registrada" value='' placeholder="Sua Senha" type="password" class="form-control" />
+              <input ng-model="userNew.senha" id="senha-registrada" value='' placeholder="Sua Senha" type="password" class="form-control" />
             </div>
             <div class="form-group">
               <label for="ConfirmaSenha-registrada">Confirme sua senha</label>
-              <input id="ConfirmaSenha-registrada" value='' placeholder="Sua Senha" type="password" class="form-control" />
+              <input ng-model="userNew.resenha" id="ConfirmaSenha-registrada" value='' placeholder="Sua Senha" type="password" class="form-control" />
             </div>
             <div class="form-group text-center">
-              <input type="submit" class="btn btn-success btn-login-submit" value="Cadastrar" />
+              <input ng-click="registrar(userNew)" type="submit" class="btn btn-success btn-login-submit" value="Cadastrar" />
             </div>
           </form>
         </div>
