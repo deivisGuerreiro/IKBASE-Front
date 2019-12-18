@@ -1,19 +1,23 @@
 angular.module('ikbaseApp').controller('loginController', function ($scope, $routeParams, usuario) {
-  var carregaContatos = function () {
-  var person = {
-    nome :"deivis",
-    email:"teste@teste",
-    senha:"teste"
-  }
-    usuario.cadastrarUsuario(person).then(function (result) {
-      
+
+
+  $scope.login = function (user) {
+
+    usuario.logar(user).then(function (result) {
+
       console.log(result.data);
     })
-  }
-  carregaContatos()
 
-  $scope.login = function (usuario) {
+  };
 
+  $scope.registrar = function (user) {
+    if (user.senha == user.resenha) {
+      
+      usuario.verifica(user).then(function (result) {
+
+        console.log(result.data);
+      }) 
+    }
 
   };
 });
