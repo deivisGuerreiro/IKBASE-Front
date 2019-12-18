@@ -1,5 +1,5 @@
-angular.module('ikbaseApp').controller('loginController', function($scope, $routeParams){
-  console.log("teste")
+angular.module('ikbaseApp').controller('loginController', function($scope, $routeParams,cadastroUsuario){
+  console.log(cadastroUsuario)
     $scope.login = function (usuario) { 
 
         
