@@ -1,4 +1,4 @@
-angular.module('ikbaseApp').controller('feedController', ($cope, $routeParams) => {
+angular.module('ikbaseApp').controller('feedController',function ($cope, $routeParams) {
 
 
 

@@ -1,4 +1,6 @@
-angular.module('ikbaseApp').config(($routeProvider) => {
+angular.module('ikbaseApp').config(function ($routeProvider) {
+    console.log("teste");
+    
     $routeProvider.when('/login', {
         templateUrl: './view/Login/login.html',
         controller: 'loginController'
