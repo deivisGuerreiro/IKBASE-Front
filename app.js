@@ -1,1 +1,1 @@
-angular.module('ikbaseApp', []);  
+angular.module('ikbaseApp', ['ngRoute']);  
