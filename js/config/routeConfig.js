@@ -4,7 +4,7 @@ angular.module('ikbaseApp').config(($routeProvider) => {
         controller: 'loginController'
     });
     $routeProvider.when('/feed', {
-        templateUrl: './feed.html',
+        templateUrl: './view/Feed/feed.html',
         controller: 'feedController'
     })
     $routeProvider.otherwise({ redirectTo: '/login' });
