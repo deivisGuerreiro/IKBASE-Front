@@ -1,8 +1,13 @@
 angular.module('ikbaseApp').controller('loginController', function ($scope, $routeParams, usuario) {
   var carregaContatos = function () {
-    usuario.pegaTodosUsuarios().then(function (data) {
+  var person = {
+    nome :"deivis",
+    email:"teste@teste",
+    senha:"teste"
+  }
+    usuario.cadastrarUsuario(person).then(function (result) {
       
-      console.log(data);
+      console.log(result.data);
     })
   }
   carregaContatos()
