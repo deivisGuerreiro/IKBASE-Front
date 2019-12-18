@@ -1,11 +1,5 @@
 angular.module('ikbaseApp').factory('comentarioService', function($http){
-    return ({
-        criaComentario: criaComentario,
-        pegaTodosComentarios: pegaTodosComentarios,
-        atualizaComentario: atualizaComentario,
-        deleteComentario: deleteComentario, 
-
-    });
+    
 
     function criaComentario(comentario){
         return $http.post('http://localhost:8080/create/comentario', comentario);
@@ -22,6 +16,14 @@ angular.module('ikbaseApp').factory('comentarioService', function($http){
     function deleteComentario(id){
         return $http.delete('http://localhost:8080/delete/comentario/',+id);
     }
+
+    return ({
+        criaComentario: criaComentario,
+        pegaTodosComentarios: pegaTodosComentarios,
+        atualizaComentario: atualizaComentario,
+        deleteComentario: deleteComentario, 
+
+    });
 
 
 });
