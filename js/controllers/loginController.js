@@ -1,7 +1,14 @@
-angular.module('ikbaseApp').controller('loginController', function($scope, $routeParams,usuario){
-  console.log(usuario.pegaTodosUsuarios())
-    $scope.login = function (tes) { 
+angular.module('ikbaseApp').controller('loginController', function ($scope, $routeParams, usuario) {
+  var carregaContatos = function () {
+    usuario.pegaTodosUsuarios().then(function (data) {
+      
+      console.log(data);
+    })
+  }
+  carregaContatos()
 
-        
-      };
+  $scope.login = function (usuario) {
+
+
+  };
 });
