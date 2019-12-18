@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    margin: 5px;
+    padding: 0;
+}
+
+/* --------- PROFILE -------------- */
+
+.profile {
+    width: 50%;
+    height: 20%;
+    float: left;
+}
+
+.profile h1 {
+    padding: 0 0 0 10px;
+    border-bottom: 0;
+    margin-bottom: 0;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    color: black;
+}
+
+.profile p {
+    border-top: 0;
+    padding: 0 0 0 10px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: black;
+}
+
+.profile ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.profile ul i {
+    width: 30px;
+    height: 30px;
+    padding: 0 10px 0 0;
+    font-size: 25px;
+    position: relative;
+    left: 7px;
+    top: 4px;
+}
+
+.options {
+    margin: 20px 0;
+    font-size: 0.8rem;
+}
+
+#edit {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10%;
+    background-color: grey;
+    color: #fff;
+    padding: .25rem;
+    font-size: 0.8em;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    top: 26px;
+}
+
+/* --------- DESCRIPTION -------------- */
+
+.description {
+    width: 200px;
+    float: left;
+    border-color: grey;
+    border: 1px;
+}
+
+.description img {
+    width: 150px;
+    height: 150px;
+}
+
+.description label {
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+}
+
+.description p {
+    font-size: 0.8rem;
+    margin: 10px;
+}
+
+.description ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 0px;
+    border: 0;
+    margin: 0;
+
+}
+
+
