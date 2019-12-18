@@ -1,6 +1,6 @@
-angular.module('ikbaseApp').controller('loginController', function($scope, $routeParams,cadastroUsuario){
-  console.log(cadastroUsuario)
-    $scope.login = function (usuario) { 
+angular.module('ikbaseApp').controller('loginController', function($scope, $routeParams,usuario){
+  console.log(usuario.pegaTodosUsuarios())
+    $scope.login = function (tes) { 
 
         
       };

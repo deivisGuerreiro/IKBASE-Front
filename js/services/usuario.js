@@ -1,4 +1,4 @@
-angular.module('ikbaseApp').factory('cadastroUsuario', function($http){
+angular.module('ikbaseApp').factory('usuario', function($http){
     return ({
         cadastrarUsuario: cadastrarUsuario,
         pegaTodosUsuarios:pegaTodosUsuarios,
@@ -8,23 +8,23 @@ angular.module('ikbaseApp').factory('cadastroUsuario', function($http){
     });
 
     function cadastrarUsuario(usuario){
-        return $http.post('localhost:8080/create/user/', usuario);
+        return $http.post('http://localhost:8080/create/user/', usuario);
     }
 
     function pegaTodosUsuarios(){
-        return $http.get('localhost:8080/getAll/users');
+        return $http.get('http://localhost:8080/getAll/users');
     }
 
     function atualizaUsuario(id){
-        return $http.put('/update/user/'+id);
+        return $http.put('http://localhost:8080/update/user/'+id);
     }
 
     function deletaUsuario(id){
-        return $http.delete('/delete/user/:id',id);
+        return $http.delete('http://localhost:8080/delete/user/'+id);
     }
 
     function pegaUsuario(id){
-        return $http.get('/get/user/:id',id);
+        return $http.get('http://localhost:8080/get/user/'+id);
     }
 
 });
