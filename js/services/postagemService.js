@@ -1,12 +1,6 @@
 angular.module('ikbaseApp').factory('postagemService', function($http){
 
-    return({
-        inserirPostagem: inserirPostagem,
-        pegarTodosPosts: pegarTodosPosts,
-        atualizarPost: atualizarPost,
-        deletaPost: deletaPost,
-        pegarPost: pegarPost
-    });
+   
 
     function inserirPostagem(postagem){
         return $http.post('localhost:8080/create/post', postagem);
@@ -27,5 +21,13 @@ angular.module('ikbaseApp').factory('postagemService', function($http){
     function pegarPost(id){
         return $http.get('http://localhost:8080/get/post/'+id);
     }
+
+    return({
+        inserirPostagem: inserirPostagem,
+        pegarTodosPosts: pegarTodosPosts,
+        atualizarPost: atualizarPost,
+        deletaPost: deletaPost,
+        pegarPost: pegarPost
+    });
 
 });
