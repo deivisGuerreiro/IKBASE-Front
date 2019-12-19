@@ -1,20 +1,16 @@
 angular.module('ikbaseApp').config(function ($routeProvider) {
     
-    $routeProvider.when('/login', {
+    $routeProvider.when('/registrar', {
         templateUrl: './view/Login/login.html',
         controller: 'loginController'
-    });
-    $routeProvider.when('/feed', {
-        templateUrl: './view/Feed/feed.html',
-        controller: 'feedController'
     });
     $routeProvider.when('/user', {
         templateUrl: './view/User/profile.html',
         controller: 'usuarioController'
     })
-    $routeProvider.when('/nSei', {
+    $routeProvider.when('/feed', {
         templateUrl: './view/Tela/nSei.html',
-        controller: 'usuarioController'
+        controller: 'feedController'
     })
-    $routeProvider.otherwise({ redirectTo: '/login' });
+    $routeProvider.otherwise({ redirectTo: '/feed' });
 })

@@ -21,10 +21,35 @@
   <script src="./js/config/auth-config.js"></script>
   <script src="./js/controllers/feedController.js"></script>
   <script src="./js/controllers/loginController.js"></script>
+  <script src="./js/controllers/usuarioController.js"></script>
   <script src="./js/services/usuario.js"></script>
+  <script src="./js/services/postagemService.js"></script>
+
+
+  <link rel="stylesheet" href="/view/css/cssPrincipal.css">
 </head>
 
-<body ng-app="ikbaseApp">
+<body ng-app="ikbaseApp" ng-controller="loginController">
+  <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">IKbase</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0" ng-show="!logado">
+            <input class="form-control mr-sm-2" ng-model="user.email" type="email" placeholder="E-mail" aria-label="E-mail">
+            <input class="form-control mr-sm-2" ng-model="user.senha" type="password" placeholder="Senha" aria-label="Senha">
+            <button ng-click="login(user)" class="btn btn-outline-success my-2 my-sm-0">Logar</button>
+        </form>
+        <a href="/#!/registrar" ng-show="!logado" class="btn btn-outline-success my-2 my-sm-0" style="margin-left: 10px;">Registrar</a>
+        <button ng-if="logado" ng-click="deslogar()"class="btn btn-outline-success my-2 my-sm-0" style="margin-left: 10px;">Deslogar</button>
+    </div>
+</nav>
   <ng-view></ng-view>
 
 </body>
