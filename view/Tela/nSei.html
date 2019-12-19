@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        nav{
+            grid-area: inputs;
+            display: none;
+            /* left: 100px; */
+        }
+        .nav{
+            grid-template-areas: "logo inputs btnEntrar btnRegistrar";
+            width: 100%;
+            height: 73px;
+            background: #FFF;
+            display: grid;
+            padding: 5px;
+            margin-left: 10px;
+            grid-template-columns: 1fr 1fr 180px 180px;
+        }
+        .nav-registrar{
+            display: none;
+            width: 50%;
+            margin: 0px;
+        }
+        .nav-registrar section{
+            border:  1px solid rgba(0, 0, 0, .5);
+            box-sizing: border-box;
+            padding: 29px 65px;
+        }
+        .nav-registrar section h1{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 16px;
+        }
+        .nav-registrar section input{
+            width: 100%;
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+        .logo{
+            grid-area: logo;
+            width: 40%;
+            height: 100%;
+            background-color: red;
+        }
+        .btn{
+            border-radius: 6px;
+            width: 160px;
+            height: 40px;
+            border:  none;
+            background-color: #18A0FB;
+            color: white;
+        }
+        .btn-entrar{
+            grid-area: btnEntrar;
+            /* background-color: #18A0FB; */
+            color: white;
+            display: grid;
+        }
+        .btn-logar{
+            display: none;
+            grid-area: btnEntrar;
+            justify-content: center;
+        }
+        .btn-registrar{
+            grid-area: btnRegistrar;
+            background-color: #FFF;
+            color: #18A0FB;
+            border: 1px solid #18A0FB;
+        }
+        .esqueceu{
+            font-size: 15px;
+            color: #18A0FB;
+            font-style: normal;
+            /* position:  absolute; */
+            position: relative;
+            left: 519px;
+            bottom: -2px;
+            text-decoration: none;
+        }
+        h1, h3{
+            font-weight: normal;
+            letter-spacing: -.015em;
+            text-align: center;
+            font-style: normal;
+        }
+        h1{
+            font-size: 38px;
+        }
+        h3{
+            font-size:  26px;
+        }
+        input {
+            width: 310px;
+            height: 40px;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            width: 100%;
+            height: 300px;
+            background-color: black;
+            color: #E5E5E5;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">Logotipo</div>
+        <button class="btn btn-entrar" onclick="abrirMenuLogin()">Entrar</button>
+        <button class="btn btn-registrar" onclick="abrirMenuRegistrar()">Registrar</button>
+        <nav>
+            <form>
+                <input type="text" placeholder="Nome" ng-model="usuario.nome" ng-required="true">
+                <input type="email" placeholder="usuario@email.com" ng-model="usuario.email" ng-required="true">
+                
+                <a href="" class="esqueceu">Esqueceu a senha?</a>
+            </form>
+        </nav>
+        <button class="btn btn-logar" ng-click="logar(usuario)">Entrar</button>
+    </div>
+    <div class="nav-registrar">
+        <h1>Está pronto para começar?</h1>
+        <h3>Crie agora mesmo sua conta.</h3>
+        <h3>É grátis e só demora um minuto.</h3>
+        <section>
+            <h1>Registrar</h1>
+            <input type="text" name="nome" placeholder="Nome" ng-model="usuario.nome" ng-required="true">
+            <input type="email" name="email" placeholder="Email: usuario@lala.com" ng-model="usuario.email" ng-required="true">
+            <input type="password" name="senha" placeholder="senha" ng-model="usuario.senha" ng-required="true">
+            <input type="text" name="profissao" placeholder="Profissão" ng-model="usuario.profissao" ng-required="false">
+            <input type="text" name="urlfoto" placeholder="Url da foto" ng-model="usuario.foto" ng-required="false">
+            <button class="btn btn-registro">Registrar</button>
+        </section>
+    </div>
+    <div class="header">
+        <p>É um site de perguntas e respostas para programadores profissionais e entusiastas.</p>
+        <button class="btn">Juntar-se a comunidade</button>
+    </div>
+    <div>
+        <h3>Explore e compartilhe conhecimento</h3>
+        <h5>Qual a sua dúvida?</h5>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button class="btn">Enviar</button>
+    </div>
+    <script>
+        //input.addEventListener('click', abrirMenuLogin());
+        function abrirMenuLogin(){
+            let input = document.querySelector('nav');
+            let btnEntrar = document.querySelector('.btn-entrar');
+            let btnLogar = document.querySelector('.btn-logar');
+            console.log(input);
+            console.log(btnEntrar);
+            input.style.display = 'flex';
+            btnEntrar.style.display = 'none';
+            btnLogar.style.display = 'flex';
+        }
+        function abrirMenuRegistrar(){
+            let btnRegistrar = document.querySelector('.nav-registrar');
+            console.log(btnRegistrar);
+            btnRegistrar.style.display = 'inline-block';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

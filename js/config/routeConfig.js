@@ -12,5 +12,9 @@ angular.module('ikbaseApp').config(function ($routeProvider) {
         templateUrl: './view/User/profile.html',
         controller: 'usuarioController'
     })
+    $routeProvider.when('/nSei', {
+        templateUrl: './view/Tela/nSei.html',
+        controller: 'usuarioController'
+    })
     $routeProvider.otherwise({ redirectTo: '/login' });
 })
