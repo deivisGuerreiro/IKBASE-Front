@@ -1,0 +1,20 @@
+nav{
+  grid-area: inputs;
+  display: none;
+  /* left: 100px; */
+}
+.nav{
+  grid-template-areas: "logo inputs btnEntrar btnRegistrar";
+  width: 100%;
+  height: 73px;
+  background: #FFF;
+  display: grid;
+  padding: 5px;
+  margin-left: 10px;
+  grid-template-columns: 1fr 1fr 180px 180px;
+}
+
+
+body{
+  margin: 0;
+}

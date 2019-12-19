@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
-    margin: 5px;
+    margin: 10px;
     padding: 0;
 }
 
@@ -13,12 +13,12 @@ body {
     float: left;
 }
 
-.profile h1 {
-    padding: 0 0 0 10px;
+h1 {
+    padding: 0 0 0 5px;
     border-bottom: 0;
     margin-bottom: 0;
     font-weight: lighter;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: black;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .profile ul i {
-    width: 30px;
+    width: 45px;
     height: 30px;
     padding: 0 10px 0 0;
     font-size: 25px;
@@ -72,35 +72,67 @@ body {
 .description {
     width: 200px;
     float: left;
-    border-color: grey;
-    border: 1px;
+    border-color: #dcdcdc;
+    border: solid 1px;
+    text-align: center;
 }
 
 .description img {
-    width: 150px;
-    height: 150px;
+    width: 198px;
+    height: 160px;
 }
 
 .description label {
     font-weight: bold;
     display: block;
-    margin: 10px;
+    text-align: left;
+    margin: 25px 10px 10px 10px;
 }
 
 .description p {
     font-size: 0.8rem;
     margin: 10px;
+    text-align: left;
 }
 
 .description ul {
     list-style: none;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     width: 70%;
-    padding: 0px;
+    padding: 10px;
     border: 0;
     margin: 0;
 
 }
+
+/* --------- SKILLS -------------- */
+
+.skills {
+    margin-top: 70px;
+}
+
+.skills h1 {
+    font-size: 1.5rem;
+
+}
+
+.skill-list {
+    width: 80%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.skill {
+    border-radius: 12%;
+    border: solid 1px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    background: gray;
+    color: white;
+}
+
 
 
