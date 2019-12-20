@@ -1,39 +1,4 @@
-<<<<<<< HEAD
-  
-angular.module('ikbaseApp').controller('comentarioController', function($scope, $routeParams,comentarioService) {
-  $scope.respostas = []
-  
-  
-  var carregaComentario = function () {
-    comentarioService.pegaTodosComentarios().then(function (data) {
-      $scope.respostas = data.data;
-    });
-  }
-  carregaComentario();
 
-  var criaComentario = function () {
-    comentarioService.criaComentario().then(function (data) {
-      $scope.respostas = data.data;
-    });
-  }
-  criaComentario();
-
-  var atualizaComentario = function () {
-    comentarioService.atualizaComentario().then(function (data) {
-      $scope.respostas = data.data;
-    });
-  }
-  atualizaComentario();
-
-  var deleteComentario = function () {
-    comentarioService.deleteComentario().then(function (data) {
-      $scope.respostas = data.data;
-    });
-  }
-  deleteComentario();
-
-});
-=======
 angular.module('ikbaseApp').controller('comentarioController', function($scope, $routeParams,comentarioService,postagemService) {
    
     
@@ -58,4 +23,4 @@ angular.module('ikbaseApp').controller('comentarioController', function($scope, 
       })
     }
   });
->>>>>>> 1319b7ec7e6572a6c5d3016aeaa3fd18d2b206b9
+
