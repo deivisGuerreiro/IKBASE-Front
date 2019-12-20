@@ -9,16 +9,16 @@ body {
     width: 100%;
     height: 500px;
     padding: 10px;
-    margin: 30px 30px 30px 60px;
+    margin: 370px 30px 30px 60px;
     border-left: solid 1px;
     border-color: #28a745;
+    
 }
 
 /* --------- PROFILE -------------- */
 
 .profile {
-    width: 50%;
-    height: 20%;
+    width: 45%;
     float: left;
 }
 
@@ -144,7 +144,6 @@ h1 {
     color: white;
 }
 
-
 #footer-menu {
     list-style: none;
     width: 100%;
@@ -153,6 +152,8 @@ h1 {
     border-top: solid 1px;
     padding: 15px;
     font-size: 0.8rem;
+    margin-top: 100px;
+
 }
 
 .menu {
