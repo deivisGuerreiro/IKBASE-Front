@@ -32,10 +32,10 @@ angular.module('ikbaseApp').factory('usuario', function($http){
     function _getID(){
         return $http.get('http://localhost:8080/getId');
     } 
-    function _getPost(){
+    function _getPost(id_user){
         return $http.get('http://localhost:8080/getPost/'+id_user);
     }
-    function _getComent(){
+    function _getComent(id_user){
         return $http.get('http://localhost:8080/getComent/'+id_user);
     }
     return ({

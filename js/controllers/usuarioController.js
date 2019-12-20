@@ -25,7 +25,7 @@ angular.module('ikbaseApp').controller('usuarioController', function ($scope, $r
             console.log($scope.comentsUser)
         })
     }
-    //getComent($routeParams.id)
+    getComent($routeParams.id)
 });
 
 /*
