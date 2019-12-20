@@ -1,34 +1,24 @@
 angular.module('ikbaseApp').controller('usuarioController', function ($scope, $routeParams, usuario) {
     $scope.usuario = []
 
-    $scope.cadastroUsuario = function () {
-        usuario.cadastrarUsuario().then(function(usuario) {
-            $scope.usuario = usuario.usuario
-        })
-    }
-    cadastroUsuario()
+    
 
-    $scope.pegaTodosUsuarios = function () {
-        usuario.pegaTodosUsuarios().then(function(usuario) {
-            $scope.usuario = usuario.usuario
-        })
-    }
-    pegaTodosUsuarios()
 
+/*
     $scope.atualizaUsuario = function () {
         usuario.atualizaUsuario().then(function (usuario) {
             $scope.usuario = usuario.usuario
         })
     }
-    atualizaUsuario()
+    atualizaUsuario()*/
 
-    $scope.deletaUsuario = function () {
+    /*$scope.deletaUsuario = function () {
         usuario.deletaUsuario().then(function (usuario) {
             $scope.usuario = usuario.usuario
         })
     }
     deletaUsuario()
-
+*/
     $scope.pegaUsuario = function () {
         usuario.pegaUsuario().then(function (usuario) {
             $scope.usuario = usuario.usuario
@@ -36,12 +26,7 @@ angular.module('ikbaseApp').controller('usuarioController', function ($scope, $r
     }
     pegaUsuario()
 
-    $scope.verifica = function () {
-        usuario.verifica().then(function (usuario) {
-            $scope.usuario = usuario.usuario
-        })
-    }
-    verifica()
+    
 });
 
 
