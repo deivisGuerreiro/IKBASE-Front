@@ -15,5 +15,9 @@ angular.module('ikbaseApp').config(function ($routeProvider) {
         templateUrl: './view/Tela/post.html',
         controller: 'feedController'
     });
+    $routeProvider.when('/perfil', {
+        templateUrl: './view/User/profile.html',
+        controller: 'usuarioController'
+    });
     $routeProvider.otherwise({ redirectTo: '/post' });
 })
