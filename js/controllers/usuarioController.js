@@ -10,8 +10,8 @@ angular.module('ikbaseApp').controller('usuarioController', function ($scope, $r
     }
     pegaUsuario($routeParams.id)
    
-    const getPost = function () {
-        usuario.getPost().then(function(posts) {
+    const getPost = function (id) {
+        usuario.getPost(id).then(function(posts) {
             $scope.postUser = posts.data
             console.log($scope.postUser)
         })
@@ -19,9 +19,9 @@ angular.module('ikbaseApp').controller('usuarioController', function ($scope, $r
     getPost($routeParams.id)
 
 
-    const getComent = function () {
-        usuario.getComent().then(function(comentarios) {
-            $scope.comentsUser = comentarios
+    const getComent = function (id) {
+        usuario.getComent(id).then(function(comentarios) {
+            $scope.comentsUser = comentarios.data
             console.log($scope.comentsUser)
         })
     }
