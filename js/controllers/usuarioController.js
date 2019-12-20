@@ -1,5 +1,11 @@
 angular.module('ikbaseApp').controller('usuarioController', function ($scope, $routeParams, usuario) {
-    $scope.usuario = []
+    $scope.usuario = {
+        nome: "João Almeida",
+        profissao: "arquiteto de software",
+        foto: "https://image.freepik.com/fotos-gratis/retrato-de-homem-branco-isolado_53876-40306.jpg",
+        descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio libero, enim sed tempora nulla odio similique facilis, maiores nisi accusantium ratione. Cupiditate beatae a dolor cum totam ex quos!",
+        tecnologias: ["html", "css", "javascript"]
+    }
 
     const pegaUsuario = function (id) {
         
@@ -26,6 +32,8 @@ angular.module('ikbaseApp').controller('usuarioController', function ($scope, $r
         })
     }
     getComent($routeParams.id)
+
+    $scope.logado = true
 });
 
 /*
