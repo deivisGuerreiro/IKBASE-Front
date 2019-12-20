@@ -26,6 +26,12 @@ angular.module('ikbaseApp').factory('usuario', function($http){
     function _logar(usuario){
         return $http.post('http://localhost:8080/login/user/',usuario);
     } 
+    function _logout(){
+        return $http.get('http://localhost:8080/logout');
+    } 
+    function _getID(){
+        return $http.get('http://localhost:8080/getId');
+    } 
     return ({
         cadastrarUsuario: _cadastrarUsuario,
         pegaTodosUsuarios:_pegaTodosUsuarios,
@@ -33,6 +39,8 @@ angular.module('ikbaseApp').factory('usuario', function($http){
         deletaUsuario:_deletaUsuario,
         pegaUsuario: _pegaUsuario,
         verifica:_verifica,
-        logar:_logar
+        logar:_logar,
+        logout:_logout,
+        getID:_getID
     });
 });

@@ -1,8 +1,7 @@
 angular.module('ikbaseApp').config(function ($routeProvider) {
     
     $routeProvider.when('/registrar', {
-        templateUrl: './view/Login/login.html',
-        controller: 'loginController'
+        templateUrl: './view/Login/login.html'
     });
     $routeProvider.when('/user', {
         templateUrl: './view/User/profile.html',
