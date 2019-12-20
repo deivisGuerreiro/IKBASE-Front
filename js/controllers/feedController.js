@@ -8,5 +8,4 @@ angular.module('ikbaseApp').controller('feedController', function($scope, $route
     });
   }
   carregaPosts()
-
 });
