@@ -18,3 +18,33 @@ nav{
 body{
   margin: 0;
 }
+
+#footer-menu {
+  list-style: none;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  border-top: solid 1px;
+  padding: 15px;
+  font-size: 0.8rem;
+  margin-top: 100px;
+
+}
+
+.menu {
+  padding: 10px;
+}
+
+.rede-social {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+}
+
+.social {
+  margin: 10px;
+  font-size: 1.5rem;
+}
