@@ -5,7 +5,7 @@ angular.module('ikbaseApp').factory('comentarioService', function($http){
         return $http.post('http://localhost:8080/create/comentario', comentario);
     }
 
-    function pegaTodosComentarios(){
+    function pegaTodosComentarios(id){
         return $http.get('http://localhost:8080/getAll/comentario/'+id);
     }
 
