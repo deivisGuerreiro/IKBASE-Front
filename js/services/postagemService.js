@@ -3,7 +3,7 @@ angular.module('ikbaseApp').factory('postagemService', function($http){
    
 
     function inserirPostagem(postagem){
-        return $http.post('localhost:8080/create/post', postagem);
+        return $http.post('http://localhost:8080/create/post', postagem);
     }
 
     function pegarTodosPosts(){

@@ -8,4 +8,17 @@ angular.module('ikbaseApp').controller('feedController', function($scope, $route
     });
   }
   carregaPosts()
+  $scope.savePergunta  = function (pergunta) {
+  
+    let duvida = {
+      duvida:pergunta,
+      id_user:localStorage.getItem("id"),
+      tecnologias:[]
+    }
+    postagemService.inserirPostagem(duvida).then(function (result) {
+      carregaPosts()
+    })
+  }
+  
+
 });
