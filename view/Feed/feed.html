@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div id="box" style="padding-top: 15px;"> 
 
     <div class="post" >
@@ -29,3 +30,33 @@
     </div>
     <button type="button" class="btn btn-outline-primary" style="margin-left: 85%; margin-top: 10px; margin-bottom: 10px">Veja mais perguntas</button>
  </div>
+=======
+<div>
+
+  <div class="container" style="padding-top: 50px;">
+
+    <h1>{{pergunta.duvida}}  - <small>{{pergunta.nome}}</small></h1>
+    <small>{{pergunta.data}}</small>
+
+  </div>
+
+  <ul class="list-unstyled col-10 offset-md-1" style="margin-top: 60px;">
+    <h4 style="margin-bottom: 30px;">Respostas:</h4>
+    <li ng-repeat="resposta in pergunta.comentarios | orderBy:resposta.id:true" class="media"
+      style="margin-top: 20px;border-bottom: 1px gray solid;padding-bottom: 15px;">
+
+      <div class="media-body">
+        <p class="mt-0 mb-1">{{resposta.resposta}} - <small>{{resposta.nome}}</small></p>
+        <small>{{resposta.data}}</small>
+      </div>
+    </li>
+  </ul>
+
+  <div class="col-6 offset-md-3">
+    <h5>Sua Resposta</h5>
+    <textarea class="form-control" ng-model="resposta" rows="3"></textarea><br>
+    <button ng-click="saveResposta(resposta)" type="button" class="btn btn-primary col-2 offset-md-10"
+    style="margin-bottom: 60px;">Responder</button>
+  </div>
+</div>
+>>>>>>> 1319b7ec7e6572a6c5d3016aeaa3fd18d2b206b9

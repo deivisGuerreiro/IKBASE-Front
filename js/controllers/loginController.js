@@ -26,6 +26,8 @@ angular.module('ikbaseApp').controller('loginController', function ($scope, $rou
     $scope.logado = false
   };
 
+  
+
   $scope.registrar = function (user) {
     if (user.senha == user.resenha) {
 
