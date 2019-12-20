@@ -9,10 +9,7 @@ body {
     width: 100%;
     height: 500px;
     padding: 10px;
-    margin: 370px 30px 30px 60px;
-    border-left: solid 1px;
-    border-color: #28a745;
-    
+    margin: 70px 30px 30px 60px; 
 }
 
 /* --------- PROFILE -------------- */
