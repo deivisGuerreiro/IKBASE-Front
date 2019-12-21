@@ -7,3 +7,8 @@ ISABEL DAPPER
 - pagina do usuário
 - banners index
 
+Luís Felipe Dos Santos Vasconcelos
+- desenvolver as rotas para as páginas 
+- criar services de comentários e postagens 
+- adicionar tecnologias ao banco de dados 
+- auxiliei no desenvolvimento da página de publicações
