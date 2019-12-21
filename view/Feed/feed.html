@@ -5,12 +5,14 @@
 
     <h1>{{pergunta.duvida}}  - <small>{{pergunta.nome}}</small></h1>
     <small>{{pergunta.data}}</small>
-
+    <ul class="skill-list">
+      <li class="skill" ng-repeat="tecnologia in pergunta.tecnologias">{{tecnologia.nome}}</li>
+  </ul>
   </div>
 
   <ul class="list-unstyled col-10 offset-md-1" style="margin-top: 60px;">
     <h4 style="margin-bottom: 30px;">Respostas:</h4>
-    <li ng-repeat="resposta in pergunta.comentarios | orderBy:resposta.id:true" class="media"
+    <li ng-repeat="resposta in pergunta.comentarios | orderBy:resposta.id:false" class="media"
       style="margin-top: 20px;border-bottom: 1px gray solid;padding-bottom: 15px;">
 
       <div class="media-body">

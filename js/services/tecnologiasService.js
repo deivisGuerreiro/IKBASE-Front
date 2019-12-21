@@ -1,13 +1,13 @@
-angular.module('ikbaseApp').factory('tecnologia', function($http){
+angular.module('ikbaseApp').factory('tecnologiasService', function($http){
     
     function _getTecById(id) {
-        return $http.post('http://localhost:8080/get/tec/'+id)
+        return $http.get('http://localhost:8080/get/tec/'+id)
     }
     function _getByName(nome) {
-        return $http.post('http://localhost:8080/get/tecn/'+nome)
+        return $http.get('http://localhost:8080/get/tecn/'+nome)
     }
     function _getAll() {
-        return $http.post('http://localhost:8080/get/tecs')
+        return $http.get('http://localhost:8080/get/tecs')
     }
     function _insertTec(tecnologia) {
         return $http.post('http://localhost:8080/post/tec', tecnologia)
