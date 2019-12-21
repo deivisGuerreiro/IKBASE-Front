@@ -12,3 +12,10 @@ Luís Felipe Dos Santos Vasconcelos
 - criar services de comentários e postagens 
 - adicionar tecnologias ao banco de dados 
 - auxiliei no desenvolvimento da página de publicações
+
+Deivis Felipe
+- estrutura do projeto
+- Login, registrar ( o visual a Camila ajudou )
+- Tela inicial com publicações, com todas as funcionalidades ( o visual a Camila ajudou )
+- Tela do post individual com as respotas ( Com ajuda do Luis )
+- Controller registro, login e publicações
