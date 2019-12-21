@@ -13,7 +13,7 @@ Luís Felipe Dos Santos Vasconcelos
 - adicionar tecnologias ao banco de dados 
 - auxiliei no desenvolvimento da página de publicações
 
-Deivis Felipe
+DEIVIS FELIPE GUERREIRO FAGUNDES
 - estrutura do projeto
 - Login, registrar ( o visual a Camila ajudou )
 - Tela inicial com publicações, com todas as funcionalidades ( o visual a Camila ajudou )
