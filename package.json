@@ -10,7 +10,7 @@
   "dependencies": {
     "@angular/cli": "^8.3.20",
     "@angular/router": "^8.2.14",
-    "angular": "^1.7.9",
+    "angular": "^1.8.0",
     "angular-route": "^1.7.9",
     "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.7",
